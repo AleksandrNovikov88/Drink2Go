@@ -85,7 +85,169 @@
           </div>
         </div>
       </section>
-      <section class="catalog"></section>
+      <section class="catalog">
+        <div class="catalog__container">
+          <span>Каталог</span>
+          <h3>Каталог кофейных напитков</h3>
+          <div class="catalog__filters">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog__filter-cost">
+                <legend>Цена</legend>
+                <div class="catalog__range-filter">
+                  <div class="catalog__range-controls">
+                    <div class="catalog__scale">
+                      <div class="catalog__bar"></div>
+                    </div>
+                    <div class="catalog__toggle toggle-min"></div>
+                    <div class="catalog__toggle toggle-max"></div>
+                  </div>
+                  <div class="catalog__price-controls">
+                    <label class="catalog__min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="catalog__max-price">
+                      до <input type="number" name="max-price" value="900">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Наличие молока</legend>
+                <ul class="catalog__radio-list">
+                  <li class="catalog__filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="no matter"
+                      value="no matter" checked>
+                    <label for="no matter">Неважно</label>
+                  </li>
+                  <li class="catalog__filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="animal milk" value="animal milk">
+                    <label for="animal milk">Только животное</label>
+                  </li>
+                  <li class="catalog__filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="vegetable milk" value="vegetable milk">
+                    <label for="vegetable milk">Только растительное</label>
+                  </li>
+                  <li class="catalog__filter-option filter-radio">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="without milk" value="without milk" disabled>
+                    <label for="without milk">Без молока</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Страна произрастания</legend>
+                <ul class="catalog__country-list">
+                  <li class="catalog__filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="brazil" id="brazil"
+                      checked>
+                    <label for="brazil">Бразилия</label>
+                  </li>
+                  <li class="catalog__filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="ethiopia"
+                      id="ethiopia">
+                    <label for="ethiopia">Эфиопия</label>
+                  </li>
+                  <li class="catalog__filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="сolombia" id="сolombia">
+                    <label for="сolombia">Колумбия</label>
+                  </li>
+                  <li class="catalog__filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="costarica" id="costarica">
+                    <label for="costarica">Коста-Рика</label>
+                  </li>
+                  <li class="catalog__filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="peru" id="peru" disabled>
+                    <label for="peru">Перу</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="catalog__filter-button" type="submit">Применить фильтр</button>
+              <button class="catalog__filter-button" type="submit">Сбросить фильтр</button>
+            </form>
+          </div>
+          <div class="catalog__cards">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <legend>Сортировка:</legend>
+              <select>
+               <option value="по умолчанию">по умолчанию</option>
+               <option value="сначала дорогие">сначала дорогие</option>
+               <option value="сначала дешевые">сначала дешевые</option>
+               <option value="высокий рейтинг">высокий рейтинг</option>
+              </select>
+             </form>
+             <div class="catalog__cards-container">
+              <ul>
+                <li class="catalog__card">
+                  <img src="" width="130" height="188" alt="банка кофе">
+                  <h4>Декаф Флэт Уайт</h4>
+                  <p>Кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком</p>
+                  <span>225₽</span>
+                  <a class="button" href="javascript:void(0)">В корзину</a>
+                </li>
+                <li class="catalog__card">
+                  <img src="" width="130" height="188" alt="банка кофе">
+                  <h4>Декаф Флэт Уайт</h4>
+                  <p>Кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком</p>
+                  <span>225₽</span>
+                  <a class="button" href="javascript:void(0)">В корзину</a>
+                </li>
+                <li class="catalog__card">
+                  <img src="" width="130" height="188" alt="банка кофе">
+                  <h4>Декаф Флэт Уайт</h4>
+                  <p>Кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком</p>
+                  <span>225₽</span>
+                  <a class="button" href="javascript:void(0)">В корзину</a>
+                </li>
+                <li class="catalog__card">
+                  <img src="" width="130" height="188" alt="банка кофе">
+                  <h4>Декаф Флэт Уайт</h4>
+                  <p>Кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком</p>
+                  <span>225₽</span>
+                  <a class="button" href="javascript:void(0)">В корзину</a>
+                </li>
+                <li class="catalog__card">
+                  <img src="" width="130" height="188" alt="банка кофе">
+                  <h4>Декаф Флэт Уайт</h4>
+                  <p>Кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком</p>
+                  <span>225₽</span>
+                  <a class="button" href="javascript:void(0)">В корзину</a>
+                </li>
+                <li class="catalog__card">
+                  <img src="" width="130" height="188" alt="банка кофе">
+                  <h4>Декаф Флэт Уайт</h4>
+                  <p>Кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком</p>
+                  <span>225₽</span>
+                  <a class="button" href="javascript:void(0)">В корзину</a>
+                </li>
+              </ul>
+             </div>
+             <div class="catalog__navigation">
+              <ul class="catalog__navigation-list">
+                <li class="catalog__navigation-item">
+                  <a href="javascript:void(0)">Назад</a>
+                </li>
+                <li class="catalog__navigation-item">
+                  <a href="javascript:void(0)">1</a>
+                </li>
+                <li class="catalog__navigation-item">
+                  <a href="javascript:void(0)">2</a>
+                </li>
+                <li class="catalog__navigation-item">
+                  <a href="javascript:void(0)">3</a>
+                </li>
+                <li class="catalog__navigation-item">
+                  <a href="javascript:void(0)">Вперёд</a>
+                </li>
+              </ul>
+             </div>
+          </div>
+        </div>
+      </section>
       <section class="map"></section>
     </main>
     <footer></footer>
