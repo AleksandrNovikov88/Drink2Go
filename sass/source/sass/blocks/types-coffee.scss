@@ -1,0 +1,17 @@
+// @import "blocks/types-coffee";
+
+.types-coffee__list {
+  list-style-type: none;;
+}
+
+.types-coffee__item--flat-white {
+  background-color: $flat-white;
+}
+
+.types-coffee__item--lavender {
+  background-color: $lavender-latte;
+}
+
+.types-coffee__item--espresso {
+  background-color: $espresso;
+}
